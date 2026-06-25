@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMKS Muhammadiyah Jatiroto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <nav class="bg-emerald-700 text-white sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#beranda" class="flex items-center space-x-3 group">
+                <div class="bg-white p-2 rounded-full text-emerald-700 font-bold text-xl w-11 h-11 flex items-center justify-center shadow-inner group-hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-school-flag"></i>
+                </div>
+                <div>
+                    <span class="font-bold text-lg block tracking-wide leading-none">SMKS MUHAMMADIYAH</span>
+                    <span class="text-xs text-emerald-200 tracking-wider font-semibold">JATIROTO - LUMAJANG</span>
+                </div>
+            </a>
+            
+            <div class="hidden md:flex space-x-6 font-medium">
+                <a href="#beranda" class="hover:text-emerald-200 transition-colors py-1">Beranda</a>
+                <a href="#berita" class="hover:text-emerald-200 transition-colors py-1">Berita</a>
+                <a href="#jurusan" class="hover:text-emerald-200 transition-colors py-1">Jurusan</a>
+                <a href="#absen" class="bg-yellow-500 text-emerald-950 px-4 py-1.5 rounded-full shadow hover:bg-yellow-400 transition-all font-semibold">Menu Absen</a>
+            </div>
+
+            <button id="menu-btn" class="md:hidden block focus:outline-none text-2xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden bg-emerald-800 md:hidden border-t border-emerald-600">
+            <a href="#beranda" class="block px-6 py-3 hover:bg-emerald-700 border-b border-emerald-700">Beranda</a>
+            <a href="#berita" class="block px-6 py-3 hover:bg-emerald-700 border-b border-emerald-700">Berita</a>
+            <a href="#jurusan" class="block px-6 py-3 hover:bg-emerald-700 border-b border-emerald-700">Jurusan</a>
+            <a href="#absen" class="block px-6 py-3 bg-yellow-500 text-emerald-950 font-bold">Menu Absen</a>
+        </div>
+    </nav>
+
+    <header id="beranda" class="relative bg-gradient-to-br from-emerald-800 to-teal-900 text-white py-28 px-4 text-center overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="relative container mx-auto max-w-3xl">
+            <span class="bg-emerald-600/50 text-emerald-200 text-xs px-3 py-1.5 rounded-full uppercase tracking-widest font-semibold inline-block mb-4">Pendidikan Berkemajuan</span>
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight leading-tight">SMKS Muhammadiyah Jatiroto</h1>
+            <p class="text-lg text-emerald-100 mb-8 max-w-xl mx-auto font-light">Mewujudkan lulusan yang berakhlak mulia, unggul, kompeten di bidang teknologi dan manajemen, serta siap bersaing di dunia kerja.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#absen" class="bg-yellow-500 hover:bg-yellow-400 text-emerald-950 font-bold px-8 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all">Isi Absensi Sekarang</a>
+                <a href="#jurusan" class="border border-white/30 hover:bg-white/10 px-8 py-3 rounded-lg transition-all font-medium">Lihat 6 Kompetensi Keahlian</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="berita" class="py-20 container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 relative inline-block">
+                Berita & Pengumuman Terbaru
+                <span class="block w-12 h-1 bg-emerald-600 mx-auto mt-2 rounded"></span>
+            </h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow border border-gray-100">
+                <div class="bg-emerald-100 h-48 flex items-center justify-center text-emerald-600 text-5xl">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div class="p-6">
+                    <span class="text-xs text-emerald-600 font-semibold uppercase tracking-wider block mb-2">PPDB</span>
+                    <h3 class="font-bold text-lg text-gray-900 mb-2 hover:text-emerald-700 transition-colors"><a href="#">Penerimaan Peserta Didik Baru (PPDB) Telah Dibuka!</a></h3>
+                    <p class="text-gray-600 text-sm mb-4 line-clamp-3">Bergabunglah bersama SMKS Muhammadiyah Jatiroto. Tersedia beasiswa prestasi dan bantuan khusus bagi siswa kurang mampu.</p>
+                    <span class="text-xs text-gray-400"><i class="fa-regular fa-calendar mr-1"></i> 25 Juni 2026</span>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow border border-gray-100">
+                <div class="bg-teal-100 h-48 flex items-center justify-center text-teal-600 text-5xl">
+                    <i class="fa-solid fa-handshake"></i>
+                </div>
+                <div class="p-6">
+                    <span class="text-xs text-teal-600 font-semibold uppercase tracking-wider block mb-2">Kemitraan</span>
+                    <h3 class="font-bold text-lg text-gray-900 mb-2 hover:text-emerald-700 transition-colors"><a href="#">Kerjasama Industri Baru untuk Penyerapan Kerja Lulusan</a></h3>
+                    <p class="text-gray-600 text-sm mb-4 line-clamp-3">Sekolah resmi menandatangani MoU dengan beberapa PT terkemuka untuk sinkronisasi kurikulum industri dan penyaluran kerja.</p>
+                    <span class="text-xs text-gray-400"><i class="fa-regular fa-calendar mr-1"></i> 20 Juni 2026</span>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow border border-gray-100">
+                <div class="bg-yellow-100 h-48 flex items-center justify-center text-yellow-600 text-5xl">
+                    <i class="fa-solid fa-trophy"></i>
+                </div>
+                <div class="p-6">
+                    <span class="text-xs text-yellow-600 font-semibold uppercase tracking-wider block mb-2">Prestasi</span>
+                    <h3 class="font-bold text-lg text-gray-900 mb-2 hover:text-emerald-700 transition-colors"><a href="#">Juara Lomba Kompetensi Siswa (LKS) Tingkat Kabupaten</a></h3>
+                    <p class="text-gray-600 text-sm mb-4 line-clamp-3">Selamat kepada para siswa berbakat yang berhasil membawa pulang medali emas dan mengharumkan nama sekolah di tingkat daerah.</p>
+                    <span class="text-xs text-gray-400"><i class="fa-regular fa-calendar mr-1"></i> 14 Juni 2026</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="jurusan" class="py-20 bg-emerald-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 relative inline-block">
+                    Kompetensi Keahlian (Jurusan)
+                    <span class="block w-12 h-1 bg-emerald-600 mx-auto mt-2 rounded"></span>
+                </h2>
+                <p class="text-gray-600 mt-2 max-w-md mx-auto">Kami menyediakan 6 pilihan jurusan unggulan yang relevan dengan perkembangan industri terkini.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-emerald-100 text-center hover:-translate-y-1 transition-transform">
+                    <div class="w-14 h-14 bg-emerald-600 text-white rounded-full flex items-center justify-center text-2xl mx-auto mb-4 shadow">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-gray-900">TKJ</h3>
+                    <p class="text-xs text-emerald-700 font-semibold uppercase mb-2">Teknik Komputer & Jaringan</p>
+                    <p class="text-gray-600 text-sm">Fokus pada keahlian jaringan internet, instalasi server, troubleshooting hardware/software, serta keamanan siber digital.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-emerald-100 text-center hover:-translate-y-1 transition-transform">
+                    <div class="w-14 h-14 bg-emerald-600 text-white rounded-full flex items-center justify-center text-2xl mx-auto mb-4 shadow">
+                        <i class="fa-solid fa-motorcycle"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-gray-900">TSM</h3>
+                    <p class="text-xs text-emerald-700 font-semibold uppercase mb-2">Teknik Sepeda Motor</p>
+                    <p class="text-gray-600 text-sm">Mempelajari perawatan berkala, perbaikan mesin, sistem kelistrikan kendaraan roda dua, hingga tata kelola bisnis bengkel.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-emerald-100 text-center hover:-translate-y-1 transition-transform">
+                    <div class="w-14 h-14 bg-emerald-600 text-white rounded-full flex items-center justify-center text-2xl mx-auto mb-4 shadow">
+                        <i class="fa-solid fa-gears"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-gray-900">TPM</h3>
+                    <p class="text-xs text-emerald-700 font-semibold uppercase mb-2">Teknik Pemesinan</p>
+                    <p class="text-gray-600 text-sm">Membekali kompetensi pengerjaan logam, pengoperasian mesin bubut, frais, sekrap, hingga pemrograman mesin berbasis CNC digital.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-emerald-100 text-center hover:-translate-y-1 transition-transform">
+                    <div class="w-14 h-14 bg-emerald-600 text-white rounded-full flex items-center justify-center text-2xl mx-auto mb-4 shadow">
+                        <i class="fa-solid fa-car-wrench"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-gray-900">TKR</h3>
+                    <p class="text-xs text-emerald-700 font-semibold uppercase mb-2">Teknik Kendaraan Ringan</p>
+                    <p class="text-gray-600 text-sm">Fokus pada perawatan otomotif mobil/kendaraan ringan, perbaikan sistem transmisi, sasis, kemudi, dan teknologi injeksi (EFI).</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-emerald-100 text-center hover:-translate-y-1 transition-transform">
+                    <div class="w-14 h-14 bg-emerald-600 text-white rounded-full flex items-center justify-center text-2xl mx-auto mb-4 shadow">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-gray-900">TITL</h3>
+                    <p class="text-xs text-emerald-700 font-semibold uppercase mb-2">Teknik Instalasi Tenaga Listrik</p>
+                    <p class="text-gray-600 text-sm">Mempelajari perencanaan & pemasangan instalasi listrik penerangan, daya bangunan bertingkat, serta sistem kontrol motor industri.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-emerald-100 text-center hover:-translate-y-1 transition-transform">
+                    <div class="w-14 h-14 bg-emerald-600 text-white rounded-full flex items-center justify-center text-2xl mx-auto mb-4 shadow">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-gray-900">MP</h3>
+                    <p class="text-xs text-emerald-700 font-semibold uppercase mb-2">Manajemen Perkantoran</p>
+                    <p class="text-gray-600 text-sm">Menguasai tata kelola administrasi dokumen digital, kearsipan modern, komunikasi bisnis, hingga layanan humas instansi/perusahaan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="absen" class="py-20 container mx-auto px-4 max-w-5xl">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 relative inline-block">
+                Sistem Presensi Online
+                <span class="block w-12 h-1 bg-emerald-600 mx-auto mt-2 rounded"></span>
+            </h2>
+            <p class="text-gray-600 mt-2">Silakan pilih dan lengkapi form absensi harian sesuai dengan status Anda.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 items-start">
+            <div class="bg-white rounded-2xl shadow-md border border-gray-100 p-8">
+                <div class="flex items-center space-x-3 mb-6 pb-4 border-b border-gray-100">
+                    <div class="w-10 h-10 bg-teal-100 text-teal-700 rounded-lg flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-900">Absen Guru / Karyawan</h3>
+                        <p class="text-xs text-gray-500">Pusat presensi pendidik & staf sekolah</p>
+                    </div>
+                </div>
+
+                <form onsubmit="handleAbsenSubmit(event, 'Guru/Karyawan')" class="space-y-4">
+                    <input type="hidden" name="tipe" value="Guru/Karyawan">
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-1">Nama Lengkap & Gelar</label>
+                        <input type="text" name="nama" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-emerald-500 focus:outline-none text-sm" placeholder="Contoh: Ahmad Fauzi, S.Pd.">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-1">NIP / ID Pegawai</label>
+                        <input type="text" name="id_nip" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-emerald-500 focus:outline-none text-sm" placeholder="Masukkan nomor induk/ID resmi">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-1">Keterangan Kehadiran</label>
+                        <select name="status" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-emerald-500 focus:outline-none text-sm bg-white">
+                            <option value="Hadir">Hadir Tugas Utama</option>
+                            <option value="Izin">Izin Terstruktur</option>
+                            <option value="Sakit">Sakit / Surat Dokter</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-bold py-2.5 rounded-lg shadow transition-colors text-sm flex items-center justify-center">
+                        <i class="fa-solid fa-paper-plane mr-2"></i><span>Kirim Absen Pendidik</span>
+                    </button>
+                </form>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md border border-gray-100 p-8">
+                <div class="flex items-center space-x-3 mb-6 pb-4 border-b border-gray-100">
+                    <div class="w-10 h-10 bg-yellow-100 text-yellow-700 rounded-lg flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-user-graduate"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-xl text-gray-900">Absen Siswa</h3>
+                        <p class="text-xs text-gray-500">Presensi harian siswa aktif</p>
+                    </div>
+                </div>
+
+                <form onsubmit="handleAbsenSubmit(event, 'Siswa')" class="space-y-4">
+                    <input type="hidden" name="tipe" value="Siswa">
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-1">Nama Lengkap Siswa</label>
+                        <input type="text" name="nama" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-emerald-500 focus:outline-none text-sm" placeholder="Contoh: Rian Hidayat">
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-1">NISN / NIS</label>
+                            <input type="text" name="id_nip" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-emerald-500 focus:outline-none text-sm" placeholder="Nomor Induk Siswa">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-1">Kelas & Jurusan</label>
+                            <select name="kelas_jurusan" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-emerald-500 focus:outline-none text-sm bg-white">
+                                <optgroup label="Teknik Komputer & Jaringan">
+                                    <option value="X - TKJ">X - TKJ</option><option value="XI - TKJ">XI - TKJ</option><option value="XII - TKJ">XII - TKJ</option>
+                                </optgroup>
+                                <optgroup label="Teknik Sepeda Motor">
+                                    <option value="X - TSM">X - TSM</option><option value="XI - TSM">XI - TSM</option><option value="XII - TSM">XII - TSM</option>
+                                </optgroup>
+                                <optgroup label="Teknik Pemesinan">
+                                    <option value="X - TPM">X - TPM</option><option value="XI - TPM">XI - TPM</option><option value="XII - TPM">XII - TPM</option>
+                                </optgroup>
+                                <optgroup label="Teknik Kendaraan Ringan">
+                                    <option value="X - TKR">X - TKR</option><option value="XI - TKR">XI - TKR</option><option value="XII - TKR">XII - TKR</option>
+                                </optgroup>
+                                <optgroup label="Teknik Instalasi Tenaga Listrik">
+                                    <option value="X - TITL">X - TITL</option><option value="XI - TITL">XI - TITL</option><option value="XII - TITL">XII - TITL</option>
+                                </optgroup>
+                                <optgroup label="Manajemen Perkantoran">
+                                    <option value="X - MP">X - MP</option><option value="XI - MP">XI - MP</option><option value="XII - MP">XII - MP</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-1">Status</label>
+                        <select name="status" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-emerald-500 focus:outline-none text-sm bg-white">
+                            <option value="Hadir">Hadir Sekolahan</option>
+                            <option value="Izin">Izin Meninggalkan Kelas</option>
+                            <option value="Sakit">Sakit</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-bold py-2.5 rounded-lg shadow transition-colors text-sm flex items-center justify-center">
+                        <i class="fa-solid fa-paper-plane mr-2"></i><span>Kirim Absen Siswa</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t-4 border-emerald-600">
+        <div class="container mx-auto px-4 grid md:grid-cols-3 gap-8">
+            <div>
+                <h4 class="text-white font-bold text-lg mb-4">SMKS Muhammadiyah Jatiroto</h4>
+                <p class="text-sm leading-relaxed">Lembaga pendidikan kejuruan swasta di bawah naungan Majelis Dikdasmen Muhammadiyah yang berkomitmen mencetak teknisi cerdas dan berkarakter islami.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-lg mb-4">Tautan Navigasi</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#beranda" class="hover:text-emerald-400 transition-colors">Beranda Utama</a></li>
+                    <li><a href="#berita" class="hover:text-emerald-400 transition-colors">Berita Utama</a></li>
+                    <li><a href="#jurusan" class="hover:text-emerald-400 transition-colors">Kompetensi Jurusan</a></li>
+                    <li><a href="#absen" class="hover:text-emerald-400 transition-colors">Portal Absensi Mandiri</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-lg mb-4">Hubungi Kami</h4>
+                <ul class="space-y-3 text-sm">
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-location-dot text-emerald-500 mt-1 mr-3 flex-shrink-0"></i>
+                        <span>Jl. Ranupakis No. 1, Kecamatan Jatiroto, Kabupaten Lumajang, Jawa Timur</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fa-solid fa-envelope text-emerald-500 mr-3 flex-shrink-0"></i>
+                        <span>admin@smksmuhjatiroto.sch.id</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fa-solid fa-phone text-emerald-500 mr-3 flex-shrink-0"></i>
+                        <span>+62 334-xxxxxx</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 mt-8 pt-6 border-t border-gray-800 text-center text-xs">
+            <p>&copy; 2026 SMKS Muhammadiyah Jatiroto. Hak Cipta Dilindungi Undang-Undang.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Kendali Dropdown Navigasi Mobile
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // PENGIRIMAN DATA ABSEN NYATA KE GOOGLE SHEETS
+        function handleAbsenSubmit(event, tipe) {
+            event.preventDefault(); 
+            const form = event.target;
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const btnText = submitBtn.querySelector('span');
+            
+            // --- GANTI URL DI BAWAH INI DENGAN URL WEB APP ANDA ---
+            const SCRIPT_URL = https://script.google.com/u/0/home/projects/1ljZKyJqCqnKjNDunLbD1An56m7_1y_-RVInz2QqMbu1EVT1a2YJEa3Rl/edit; 
+
+            if (SCRIPT_URL === https://script.google.com/u/0/home/projects/1ljZKyJqCqnKjNDunLbD1An56m7_1y_-RVInz2QqMbu1EVT1a2YJEa3Rl/edit) {
+                alert("Sistem Belum Siap: Harap masukkan URL Google Apps Script Anda ke dalam kode HTML terlebih dahulu.");
+                return;
+            }
+
+            // Animasi Loading saat kirim data
+            submitBtn.disabled = true;
+            btnText.innerText = "Sedang Mengirim...";
+
+            const formData = new FormData(form);
+
+            // Kirim data menggunakan Fetch API dengan metode no-cors agar aman dari CORS policy Google
+            fetch(SCRIPT_URL, { 
+                method: 'POST', 
+                body: formData,
+                mode: 'no-cors'
+            })
+            .then(() => {
+                alert(`Sukses! Absensi ${tipe} berhasil dikirim dan tersimpan di database Google Sheets Sekolah.`);
+                form.reset();
+            })
+            .catch(error => {
+                console.error('Error!', error.message);
+                alert('Gagal mengirim data. Silakan periksa jaringan internet Anda.');
+            })
+            .finally(() => {
+                // Kembalikan tombol ke keadaan semula
+                submitBtn.disabled = false;
+                btnText.innerText = tipe === 'Siswa' ? 'Kirim Absen Siswa' : 'Kirim Absen Pendidik';
+            });
+        }
+    </script>
+</body>
+</html>
