@@ -190,25 +190,26 @@
                     </div>
                 </div>
 
-                <form onsubmit="handleAbsen(event, 'Guru/Karyawan')" class="space-y-4">
+                <form onsubmit="handleAbsenSubmit(event, 'Guru/Karyawan')" class="space-y-4">
+                    <input type="hidden" name="tipe" value="Guru/Karyawan">
                     <div>
                         <label class="block text-sm font-semibold text-gray-700 mb-1">Nama Lengkap & Gelar</label>
-                        <input type="text" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-emerald-500 focus:outline-none text-sm" placeholder="Contoh: Ahmad Fauzi, S.Pd.">
+                        <input type="text" name="nama" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-emerald-500 focus:outline-none text-sm" placeholder="Contoh: Ahmad Fauzi, S.Pd.">
                     </div>
                     <div>
                         <label class="block text-sm font-semibold text-gray-700 mb-1">NIP / ID Pegawai</label>
-                        <input type="text" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-emerald-500 focus:outline-none text-sm" placeholder="Masukkan nomor induk/ID resmi">
+                        <input type="text" name="id_nip" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-emerald-500 focus:outline-none text-sm" placeholder="Masukkan nomor induk/ID resmi">
                     </div>
                     <div>
                         <label class="block text-sm font-semibold text-gray-700 mb-1">Keterangan Kehadiran</label>
-                        <select required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-emerald-500 focus:outline-none text-sm bg-white">
+                        <select name="status" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-emerald-500 focus:outline-none text-sm bg-white">
                             <option value="Hadir">Hadir Tugas Utama</option>
                             <option value="Izin">Izin Terstruktur</option>
                             <option value="Sakit">Sakit / Surat Dokter</option>
                         </select>
                     </div>
-                    <button type="submit" class="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-bold py-2.5 rounded-lg shadow transition-colors text-sm">
-                        <i class="fa-solid fa-paper-plane mr-2"></i>Kirim Absen Pendidik
+                    <button type="submit" class="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-bold py-2.5 rounded-lg shadow transition-colors text-sm flex items-center justify-center">
+                        <i class="fa-solid fa-paper-plane mr-2"></i><span>Kirim Absen Pendidik</span>
                     </button>
                 </form>
             </div>
@@ -224,19 +225,20 @@
                     </div>
                 </div>
 
-                <form onsubmit="handleAbsen(event, 'Siswa')" class="space-y-4">
+                <form onsubmit="handleAbsenSubmit(event, 'Siswa')" class="space-y-4">
+                    <input type="hidden" name="tipe" value="Siswa">
                     <div>
                         <label class="block text-sm font-semibold text-gray-700 mb-1">Nama Lengkap Siswa</label>
-                        <input type="text" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-emerald-500 focus:outline-none text-sm" placeholder="Contoh: Rian Hidayat">
+                        <input type="text" name="nama" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-emerald-500 focus:outline-none text-sm" placeholder="Contoh: Rian Hidayat">
                     </div>
                     <div class="grid grid-cols-2 gap-4">
                         <div>
                             <label class="block text-sm font-semibold text-gray-700 mb-1">NISN / NIS</label>
-                            <input type="text" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-emerald-500 focus:outline-none text-sm" placeholder="Nomor Induk Siswa">
+                            <input type="text" name="id_nip" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-emerald-500 focus:outline-none text-sm" placeholder="Nomor Induk Siswa">
                         </div>
                         <div>
                             <label class="block text-sm font-semibold text-gray-700 mb-1">Kelas & Jurusan</label>
-                            <select required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-emerald-500 focus:outline-none text-sm bg-white">
+                            <select name="kelas_jurusan" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-emerald-500 focus:outline-none text-sm bg-white">
                                 <optgroup label="Teknik Komputer & Jaringan">
                                     <option value="X - TKJ">X - TKJ</option><option value="XI - TKJ">XI - TKJ</option><option value="XII - TKJ">XII - TKJ</option>
                                 </optgroup>
@@ -260,14 +262,14 @@
                     </div>
                     <div>
                         <label class="block text-sm font-semibold text-gray-700 mb-1">Status</label>
-                        <select required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-emerald-500 focus:outline-none text-sm bg-white">
+                        <select name="status" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-emerald-500 focus:outline-none text-sm bg-white">
                             <option value="Hadir">Hadir Sekolahan</option>
                             <option value="Izin">Izin Meninggalkan Kelas</option>
                             <option value="Sakit">Sakit</option>
                         </select>
                     </div>
-                    <button type="submit" class="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-bold py-2.5 rounded-lg shadow transition-colors text-sm">
-                        <i class="fa-solid fa-paper-plane mr-2"></i>Kirim Absen Siswa
+                    <button type="submit" class="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-bold py-2.5 rounded-lg shadow transition-colors text-sm flex items-center justify-center">
+                        <i class="fa-solid fa-paper-plane mr-2"></i><span>Kirim Absen Siswa</span>
                     </button>
                 </form>
             </div>
@@ -321,7 +323,6 @@
             mobileMenu.classList.toggle('hidden');
         });
 
-        // Menutup otomatis bilah menu saat link navigasi di-klik
         const mobileLinks = mobileMenu.querySelectorAll('a');
         mobileLinks.forEach(link => {
             link.addEventListener('click', () => {
@@ -329,11 +330,46 @@
             });
         });
 
-        // Simulasi Aksi Pengiriman Form Absensi
-        function handleAbsen(event, tipe) {
+        // PENGIRIMAN DATA ABSEN NYATA KE GOOGLE SHEETS
+        function handleAbsenSubmit(event, tipe) {
             event.preventDefault(); 
-            alert(`Sukses! Data Absensi ${tipe} telah terekam dalam sistem database sekolah.`);
-            event.target.reset(); 
+            const form = event.target;
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const btnText = submitBtn.querySelector('span');
+            
+            // --- GANTI URL DI BAWAH INI DENGAN URL WEB APP ANDA ---
+            const SCRIPT_URL = https://script.google.com/macros/s/AKfycbwkEc7M952NT-AEv-g-pJ4UIwFJ4EpKO6TEcF1rE8HYpcur1krUJ_eXMCS1pSvIWIbB/exec; 
+
+            if (SCRIPT_URL === https://script.google.com/macros/s/AKfycbwkEc7M952NT-AEv-g-pJ4UIwFJ4EpKO6TEcF1rE8HYpcur1krUJ_eXMCS1pSvIWIbB/exec) {
+                alert("Sistem Belum Siap: Harap masukkan URL Google Apps Script Anda ke dalam kode HTML terlebih dahulu.");
+                return;
+            }
+
+            // Animasi Loading saat kirim data
+            submitBtn.disabled = true;
+            btnText.innerText = "Sedang Mengirim...";
+
+            const formData = new FormData(form);
+
+            // Kirim data menggunakan Fetch API dengan metode no-cors agar aman dari CORS policy Google
+            fetch(SCRIPT_URL, { 
+                method: 'POST', 
+                body: formData,
+                mode: 'no-cors'
+            })
+            .then(() => {
+                alert(`Sukses! Absensi ${tipe} berhasil dikirim dan tersimpan di database Google Sheets Sekolah.`);
+                form.reset();
+            })
+            .catch(error => {
+                console.error('Error!', error.message);
+                alert('Gagal mengirim data. Silakan periksa jaringan internet Anda.');
+            })
+            .finally(() => {
+                // Kembalikan tombol ke keadaan semula
+                submitBtn.disabled = false;
+                btnText.innerText = tipe === 'Siswa' ? 'Kirim Absen Siswa' : 'Kirim Absen Pendidik';
+            });
         }
     </script>
 </body>
